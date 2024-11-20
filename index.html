@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עיצוב אישי מדבקה לבקבוק שמפו</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- כותרת -->
+        <h1>עיצוב אישי מדבקה לבקבוק שמפו</h1>
+        
+        <!-- הצגת מדבקה -->
+        <div class="sticker-container">
+            <img id="sticker" src="path/to/your/sticker-image.jpg" alt="Sticker">
+            <div class="circle" id="image-container">
+                <input type="file" id="uploadImage" accept="image/*">
+                <img id="uploadedImage" src="" alt="Uploaded Image" />
+            </div>
+        </div>
+        
+        <!-- כפתור לשליחה -->
+        <button id="submitButton">שלח</button>
+        
+        <!-- הודעת הצלחה -->
+        <div id="successMessage" class="hidden">
+            <p>העיצוב האישי התקבל בהצלחה, אנו עובדים על השמפו שלכם.</p>
+        </div>
+        
+        <!-- הודעת שגיאה -->
+        <div id="errorMessage" class="hidden">
+            <p>קרתה תקלה, ניתן לנסות שוב.</p>
+            <button onclick="window.location.href='index.html'">חזרה לדף הבית</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
